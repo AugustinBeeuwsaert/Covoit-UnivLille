@@ -1,0 +1,207 @@
+.trois-vignettes{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.trois-vignettes>li{
+    width: 20%;
+    aspect-ratio: 1;
+    border:1px var(--clr-title) solid;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    border-color: #AE2573;
+    
+}
+
+.trois-vignettes > li ul{
+    position:absolute;
+    bottom:0;left:0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;height: 0;
+    transition: all .75s ease-in-out;
+}
+
+.trois-vignettes > li:hover ul{
+    height: 100%;
+    background-color: #AE2573;
+    padding-top:3em;
+}
+   
+a:link { 
+     text-decoration:none; 
+    }
+
+
+
+
+
+#accueil .trois-vignettes li:nth-child(1){
+    background-image: url(../images/tesla.png);
+}
+#accueil .trois-vignettes li:nth-child(2){
+    background-image: url(../images/trotinette.jpg);
+}
+#accueil .trois-vignettes li:nth-child(3){
+    background-image: url(../images/scooter.jpg);
+}
+
+h2{
+   text-align: center;
+}
+
+li h3{
+    width: 100%;
+    background: var(--bg-transparent);
+    text-transform: uppercase;
+    margin-top: 0;
+}
+h3{
+    color:black;
+}
+
+/* Custom zone CAROUSEL */
+.carousel{
+    position:relative;
+    height: 4em;
+    overflow: hidden;
+    display: flex;
+    margin-right: 200px;
+    margin-left: 200px;
+    
+}
+
+.carousel>*{
+    height: 100%;width: auto;
+    padding: 0;
+    margin-right: 20px;
+    transition: transform 7.5s ease;
+}
+.carousel:hover>*{
+    transform: translateX(-70vw);
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+#clients{
+    margin-bottom: 100px;
+}
+
+/* recherche */
+label,
+footer {
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.output {
+    background: center/cover no-repeat url('/media/cc0-images/hamster.jpg');
+    position: relative;
+}
+
+/* messagerie */
+
+.messagerie{
+    border-style: groove;
+    border-color: black;
+    margin-right: 1200px;
+    margin-bottom: 10px;
+}
+
+.messagerie > p{
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    margin-left: 1px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content:space-around;
+    background-color: #AE2573;
+    bottom:  0;
+}
+
+footer > p{
+    color: aliceblue;
+}
+
+/* SECTION  -------------------------------------------------------------------------- */
+/* Avantage */
+
+#avantage  {
+    margin-left: 400px;
+    
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+section:not(:first-of-type):before{
+    position: absolute;
+    width: 60vw;
+    height: 1.5vh;
+    top:-10vh;
+    content: "";
+    background: radial-gradient(var(--clr-txt),transparent,transparent);
+}
+
+/* boutton haut de page */
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
+
+.bas{
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.centre , p {
+    text-align: center;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    max-width: 100%;
+  }

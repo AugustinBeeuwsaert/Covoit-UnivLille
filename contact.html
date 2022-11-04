@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+    <title>Co-Voit ULille - Contact</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Léopold V."/>
+    <meta name="author" content="Augustin B."/>
+    <link rel="icon" href="./data/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/css_global.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/css_contact.css"/>
+</head>
+
+<body>
+
+    <header> <!-- header -->
+        
+        <div>
+            <img src="./data/peutetre.png" alt="logo-ulille">
+            <h1>
+                Co-voit ULille
+            </h1>
+        </div>
+
+        <section>
+            <a href="./index.html">Accueil</a>
+            <a href="./location.html">Locations</a>
+            <a href="./deplacement.html">Déplacements à plusieurs</a>
+            <a href="./messagerie.html">Messagerie</a>
+            <a href="https://cas.univ-lille.fr/login?service=https%3A%2F%2Fent.univ-lille.fr/api/force">Authentification</a>
+        </section>
+
+    </header>
+
+    <main> <!-- main section -->
+
+        <h2>
+            Contacter Co-voit ULille
+        </h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Formulaire de contact</legend>
+                <label for="contact">Un problème? Un avis? Faites-nous en part.</label>
+
+                <div>
+                    <select name="typepb" id="typepb">
+                        <option value="">--Choisissez un champ--</option>
+                        <option value="avis">Avis</option>
+                        <option value="probleme">Problème technique</option>
+                        <option value="bug">Bug du site</option>
+                        <option value="requete">Requête</option>
+                        <option value="idee">Idée</option>
+                        <option value="report">Reporter un abus</option>
+                        <option value="info">Information sur le service</option>
+                        <option value="autre">Autre</option>
+                    </select>
+    
+                    <input type="text" name="Rédigez ici votre texte" id="letexte">
+    
+                    <input type="email" name="Email" id="lemail" placeholder="Entrez ici un email sur lequel nous pourrons vous recontacter">
+                    <input type="submit" name="Envoyer" id="envoie">
+                </div>
+
+            </fieldset>
+        </form>
+
+        <h2>
+            Information concernant le service
+        </h2>
+
+        <p>
+            Le service n'est utilisable que par les personnes ayant un compte univ-lille. Ce compte sera utilisé pour ce connecter au service.<br>
+            Tout abus au règles mentionnées dans les mentions légales et toute dérogations aux règles des services informatique de l'université de Lille sera puni.<br>
+            Tous les formulaires de contacts sont transférés à l'administrateur du service.<br>
+            L'université de Lille et l'administrateur se réserve le droit de vous retirer l'accès au service à tout moment.<br>
+            Pour tout autre informations concernant le service, merci de contacter l'administrateur via le formulaire de contact (champ "information sur le service").
+        </p>
+
+    </main>
+
+    <footer> <!-- footer! -->
+
+        <div>
+            <section> <!-- réseaux sociaux -->
+                <p>On se retrouve sur :</p>
+                <a href="https://fr-fr.facebook.com/UniversitedeLille/"><img src="./data/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/univ_lille?lang=fr"><img src="./data/twitter.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/univ_lille/?hl=fr"><img src="./data/instagram.svg" alt="instagram"></a>
+                <a href="https://discord.gg"><img src="./data/discord.svg" alt="discord"></a>
+            </section>
+            <a href="https://www.univ-lille.fr/mentions-legales/">Mentions légales</a>
+            <a href="./contact.html">Déconnexion</a>
+            <a href="https://sesame.univ-lille.fr/">Mon compte</a>
+        </div>
+        
+        <small>
+            Tous droits réservés - Co-voit ULille© - 2021 - SAE 1.06 - Beeuwsaert - Varlamoff
+        </small>
+
+    </footer>
+
+</body>
+
+</html>

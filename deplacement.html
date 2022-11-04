@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+    <title>Co-Voit ULille - Trajets</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Léopold V."/>
+    <meta name="author" content="Augustin B."/>
+    <link rel="icon" href="./data/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/css_global.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/css_location.css"/>
+</head>
+
+<body>
+
+    <header> <!-- header -->
+        
+        <div>
+            <img src="./data/peutetre.png" alt="logo-ulille">
+            <h1>
+                Co-voit ULille
+            </h1>
+        </div>
+        
+        <section>
+            <a href="./index.html">Accueil</a>
+            <a href="./location.html">Locations</a>
+            <a href="./messagerie.html">Messagerie</a>
+            <a href="./contact.html">Contact</a>
+            <a href="https://cas.univ-lille.fr/login?service=https%3A%2F%2Fent.univ-lille.fr/api/force">Authentification</a>
+        </section>
+
+    </header>
+
+    <main> <!-- main section -->
+
+        <section> <!-- formulaires -->
+            <form>
+                <fieldset class="raccourci">
+                    <legend>Recherche avancée</legend>
+                    <div> 
+                        <label for="recherche">Recherche : </label> 
+                        <input type="text" id="recherche">
+                    </div>
+
+                    <div>
+                        <label for="prix">Prix : </label> 
+                        <input type="range" id="prix">
+                    </div>
+
+                    <div>
+                        <label for="marque">Destination : </label>
+                        <select name="marque" id="marque">
+                            <option value="">--Choisissez un campus--</option>
+                            <option value="scient">Cité Scientifique</option>
+                            <option value="sante">Eurasanté</option>
+                            <option value="pontbois">Pont De Bois</option>
+                            <option value="droit">FSJPS</option>
+                            <option value="roubaix">Roubaix</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="submit" id="envoyer">
+                    </div>
+
+                    <div>
+                        <input type="reset" id="effacer">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="raccourci">
+                    <legend>Déposer une annonce</legend>
+                    <div> 
+                        <label for="ville">Ville de départ : </label> 
+                        <input type="text" id="ville">
+                    </div>
+
+                    <div>
+                        <label for="marque">Destination : </label>
+                        <select name="marque" id="marque">
+                            <option value="">--Choisissez un campus--</option>
+                            <option value="scient">Cité Scientifique</option>
+                            <option value="sante">Eurasanté</option>
+                            <option value="pontbois">Pont De Bois</option>
+                            <option value="droit">FSJPS</option>
+                            <option value="roubaix">Roubaix</option>
+                        </select>
+                    </div>
+
+                    <div> 
+                        <label for="prixdemande">Description : </label> 
+                        <input type="text" id="prixdemande">
+                    </div>
+
+                    <div> 
+                        <label for="desc">Compensation demandée : </label> 
+                        <input type="text" id="desc">
+                    </div>
+
+                    <div>
+                        <input type="submit" id="envoyer">
+                    </div>
+
+                    <div>
+                        <input type="reset" id="effacer">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section> <!-- trajets -->
+            
+            <h2>
+                Tous les trajets disponibles
+            </h2>
+
+            <section>
+                <img src="./data/cryptopunk1.png" alt="pp1">
+                <div class="propo">
+                    <h2>Vernon Gingras</h2>
+                    <p>
+                        Part de : Seclin<br>
+                        Se rend au campus : Cité Scientifique<br>
+                        Description / compensation : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/cryptopunk2.png" alt="pp2">
+                <div class="propo">
+                    <h2>Nicholas David</h2>
+                    <p>
+                        Part de : Armentière<br>
+                        Se rend au campus : Cité Scientifique<br>
+                        Description / compensation : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/cryptopunk3.png" alt="pp3">
+                <div class="propo">
+                    <h2>Coralie Tremblay</h2>
+                    <p>
+                        Part de : Roncq<br>
+                        Se rend au campus : Pont De Bois<br>
+                        Description / compensation : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/cryptopunk4.jpg" alt="pp4">
+                <div class="propo">
+                    <h2>Jean Paquette</h2>
+                    <p>
+                        Part de : Valenciennes<br>
+                        Se rend au campus : Pont De Bois<br>
+                        Description / compensation : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/cryptopunk5.png" alt="pp5">
+                <div class="propo">
+                    <h2>Agnès Monty</h2>
+                    <p>
+                        Part de : Templeuve<br>
+                        Se rend au campus : Eurasanté<br>
+                        Description / compensation : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/cryptopunk6.jpg" alt="pp6">
+                <div class="propo">
+                    <h2>Prunella St-Pierre</h2>
+                    <p>
+                        Part de : Pont-A-Marcq<br>
+                        Se rend au campus : FSJPS<br>
+                        Description / compensation : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer> <!-- footer! -->
+
+        <div>
+            <section> <!-- réseaux sociaux -->
+                <p>On se retrouve sur :</p>
+                <a href="https://fr-fr.facebook.com/UniversitedeLille/"><img src="./data/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/univ_lille?lang=fr"><img src="./data/twitter.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/univ_lille/?hl=fr"><img src="./data/instagram.svg" alt="instagram"></a>
+                <a href="https://discord.gg"><img src="./data/discord.svg" alt="discord"></a>
+            </section>
+            <a href="https://www.univ-lille.fr/mentions-legales/">Mentions légales</a>
+            <a href="./deplacement.html">Déconnexion</a>
+            <a href="https://sesame.univ-lille.fr/">Mon compte</a>
+        </div>
+        
+        <small>
+            Tous droits réservés - Co-voit ULille© - 2021 - SAE 1.06 - Beeuwsaert - Varlamoff
+        </small>
+
+    </footer>
+
+</body>
+
+</html>

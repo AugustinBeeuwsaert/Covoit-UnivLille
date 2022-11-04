@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+    <title>Co-Voit ULille - Locations</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Léopold V."/>
+    <meta name="author" content="Augustin B."/>
+    <link rel="icon" href="./data/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/css_global.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/css_location.css"/>
+</head>
+
+<body>
+
+    <header> <!-- header -->
+        
+        <div>
+            <img src="./data/peutetre.png" alt="logo-ulille">
+            <h1>
+                Co-voit ULille
+            </h1>
+        </div>
+
+        <section>
+            <a href="./index.html">Accueil</a>
+            <a href="./deplacement.html">Déplacements à plusieurs</a>
+            <a href="./messagerie.html">Messagerie</a>
+            <a href="./contact.html">Contact</a>
+            <a href="https://cas.univ-lille.fr/login?service=https%3A%2F%2Fent.univ-lille.fr/api/force">Authentification</a>
+        </section>
+
+    </header>
+
+    <main> <!-- main section -->
+
+        <section> <!-- formulaires -->
+            <form>
+                <fieldset class="raccourci">
+                    <legend>Recherche avancée</legend>
+                    <div> 
+                        <label for="recherche">Recherche : </label> 
+                        <input type="text" id="recherche">
+                    </div>
+
+                    <div>
+                        <label for="prix">Prix : </label> 
+                        <input type="range" id="prix">
+                    </div>
+
+                    <div>
+                        <label for="marque">Marque : </label>
+                        <select name="marque" id="marque">
+                            <option value="">--Choisissez une marque--</option>
+                            <option value="tesla">Tesla</option>
+                            <option value="renault">Renault</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="smart">Smart</option>
+                            <option value="velo">Vélo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="submit" id="envoyer">
+                    </div>
+
+                    <div>
+                        <input type="reset" id="effacer">
+                    </div>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="raccourci">
+                    <legend>Déposer une annonce</legend>
+                    <div> 
+                        <label for="nom">Nom du véhicule : </label> 
+                        <input type="text" id="nom">
+                    </div>
+
+                    <div> 
+                        <label for="marque">Marque (libre) : </label> 
+                        <input type="text" id="marque">
+                    </div>
+
+                    <div> 
+                        <label for="prixdemande">Prix demandé : </label> 
+                        <input type="text" id="prixdemande">
+                    </div>
+
+                    <div> 
+                        <label for="desc">Description de votre véhicule : </label> 
+                        <input type="text" id="desc">
+                    </div>
+
+                    <div>
+                        <input type="submit" id="envoyer">
+                    </div>
+
+                    <div>
+                        <input type="reset" id="effacer">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section> <!-- propositions -->
+            
+            <h2>
+                Véhicules actuellement disponibles à la location
+            </h2>
+
+            <section>
+                <img src="./data/trotinette.jpg" alt="troti">
+                <div class="propo">
+                    <h2>Trottinette</h2>
+                    <p>
+                        Marque : Xiaomi<br>
+                        Prix : 0.50€/heure<br>
+                        Description : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/smart.jpg" alt="smart">
+                <div class="propo">
+                    <h2>Smart électrique</h2>
+                    <p>
+                        Marque : Smart<br>
+                        Prix : 10€/heure<br>
+                        Description : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/scooter.jpg" alt="scooter">
+                <div class="propo">
+                    <h2>Scooter électrique</h2>
+                    <p>
+                        Marque : Scooter<br>
+                        Prix : 8€/heure<br>
+                        Description : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/tesla.jpg" alt="tesla">
+                <div class="propo">
+                    <h2>Tesla</h2>
+                    <p>
+                        Marque : Tesla<br>
+                        Prix : 40€/heure<br>
+                        Description : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/twizy.jpg" alt="twizy">
+                <div class="propo">
+                    <h2>Voiture Twizy</h2>
+                    <p>
+                        Marque : Renault<br>
+                        Prix : 12€/heure<br>
+                        Description : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <img src="./data/velo.jpg" alt="velo">
+                <div class="propo">
+                    <h2>Vélo électrique</h2>
+                    <p>
+                        Marque : vélo jsp<br>
+                        Prix : 1.50€/heure<br>
+                        Description : ...
+                    </p>
+                    <div class="paiement">
+                        <img src="./data/izly.png" alt="izly">
+                        <img src="./data/credit-card.svg" alt="cb">
+                        <img src="./data/paypal.svg" alt="paypal">
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer> <!-- footer! -->
+
+        <div>
+            <section> <!-- réseaux sociaux -->
+                <p>On se retrouve sur :</p>
+                <a href="https://fr-fr.facebook.com/UniversitedeLille/"><img src="./data/facebook.svg" alt="facebook"></a>
+                <a href="https://twitter.com/univ_lille?lang=fr"><img src="./data/twitter.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/univ_lille/?hl=fr"><img src="./data/instagram.svg" alt="instagram"></a>
+                <a href="https://discord.gg"><img src="./data/discord.svg" alt="discord"></a>
+            </section>
+            <a href="https://www.univ-lille.fr/mentions-legales/">Mentions légales</a>
+            <a href="./location.html">Déconnexion</a>
+            <a href="https://sesame.univ-lille.fr/">Mon compte</a>
+        </div>
+        
+        <small>
+            Tous droits réservés - Co-voit ULille© - 2021 - SAE 1.06 - Beeuwsaert - Varlamoff
+        </small>
+
+    </footer>
+
+</body>
+
+</html>

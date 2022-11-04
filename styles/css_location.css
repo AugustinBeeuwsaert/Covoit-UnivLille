@@ -1,0 +1,80 @@
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+main > section:first-of-type {
+  flex-grow: 3;
+}
+
+main > section:first-of-type > form {
+  width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.raccourci {
+  padding: 1vw;
+}
+
+.raccourci > div > input, .raccourci > div > select {
+  margin-left: 1vw;
+}
+
+main > section:last-of-type {
+  flex-grow: 14;
+}
+
+main > section:last-of-type > h2 {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+main > section:last-of-type > section {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  display: flex;
+  height: 25vh;
+  flex-direction: row;
+  align-items: center;
+  border: dashed black;
+  margin-top: 5vh;
+}
+
+main > section:last-of-type > section:last-of-type {
+  margin-bottom: 5vh;
+}
+
+main > section:last-of-type > section > img {
+  height: 20vh;
+  margin: 1vw;
+}
+
+div.propo {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75vw;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 2.5vw;
+  text-decoration: underline;
+}
+
+div.paiement {
+  margin-top: 1vh;
+}
+
+div.paiement img {
+  height: 5vh;
+  margin-right: 1vw;
+}
+
+div.paiement img:first-of-type{
+  border-radius: 5px;
+}
